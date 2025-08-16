@@ -1,6 +1,5 @@
-# Allow all web crawlers to access the site
+# Allow all web crawlers access to the site.
 User-agent: *
-Allow: /
 
-# Provide the location of the sitemap file
-Sitemap: https://aeroto-astro-home.vercel.app/sitemap.xml
+# Provide the location of the sitemap file for your live domain.
+Sitemap: https://aero2astro.com/sitemap.xml

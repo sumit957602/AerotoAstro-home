@@ -19,6 +19,17 @@
     <meta name="description"
         content="We are India’s first organization which offers a career option for Research & Development in aeronautical and aerospace platform along with scholastic application with regard to aeromodelling and spacemodelling and Radio Controller hobby needs.">
     <title>Aero2Astro | Aerospace & Aeronautical R&D in India</title>
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://aero2astro.com/">
+    <meta property="og:title" content="Aero2Astro | Aerospace & Aeronautical R&D in India">
+    <meta property="og:description" content="India's first organization for R&D in aeronautical and aerospace platforms, scholastic applications, and aeromodelling.">
+    <meta property="og:image" content="https://aero2astro.com/public/aero2astro-social-preview.jpg">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://aero2astro.com/">
+    <meta name="twitter:title" content="Aero2Astro | Aerospace & Aeronautical R&D in India">
+    <meta name="twitter:description" content="India's first organization for R&D in aeronautical and aerospace platforms, scholastic applications, and aeromodelling.">
+    <meta name="twitter:image" content="https://aero2astro.com/public/aero2astro-social-preview.jpg">
 
     <!-- Favicons -->
 
@@ -1039,10 +1050,12 @@
         var wordArray = [];
         var currentWord = 0;
 
+        if (words.length > 0) {
         words[currentWord].style.opacity = 1;
         for (var i = 0; i < words.length; i++) {
             splitLetters(words[i]);
         }
+    }
 
         function changeWord() {
             var cw = wordArray[currentWord];
