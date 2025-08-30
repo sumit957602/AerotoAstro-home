@@ -470,9 +470,14 @@
         var wordArray = [];
         var currentWord = 0;
 
-        words[currentWord].style.opacity = 1;
-        for (var i = 0; i < words.length; i++) {
-            splitLetters(words[i]);
+        if (words.length > 0) {
+            words[currentWord].style.opacity = 1;
+            for (var i = 0; i < words.length; i++) {
+                splitLetters(words[i]);
+            }
+
+            changeWord();
+            setInterval(changeWord, 4000);
         }
 
         function changeWord() {
@@ -517,10 +522,6 @@
 
             wordArray.push(letters);
         }
-
-        changeWord();
-        setInterval(changeWord, 4000);
-
 
     </script>
     <script async src="https://aero2astro.com/home/script.js"></script>
