@@ -1,15 +1,24 @@
-const mobile_icon = document.getElementById('mobile-icon');
-const mobile_menu = document.getElementById('mobile-menu');
-const hamburger_icon = document.querySelector("#mobile-icon i");
+function init() {
+  const mobileIcon = document.getElementById('mobile-icon');
+  const mobileMenu = document.getElementById('mobile-menu');
 
-function openCloseMenu() {
-  mobile_menu.classList.toggle('block');
-  mobile_menu.classList.toggle('active');
+  function openCloseMenu() {
+    mobileMenu.classList.toggle('block');
+    mobileMenu.classList.toggle('active');
+  }
+
+  window.changeIcon = function (icon) {
+    icon.classList.toggle('fa-xmark');
+  };
+
+  if (mobileIcon && mobileMenu) {
+    mobileIcon.addEventListener('click', openCloseMenu);
+  }
 }
 
-function changeIcon(icon) {
-  icon.classList.toggle("fa-xmark");
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', init);
+} else {
+  init();
 }
-
-mobile_icon.addEventListener('click', openCloseMenu);
 
