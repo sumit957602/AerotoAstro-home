@@ -38,13 +38,6 @@
 
 <body class=" bg-[#272727] ">
 
-    <style>
-        .glassmorphism {
-            backdrop-filter: blur(10px);
-            background: rgba(0, 0, 0, 0);
-        }
-    </style>
-
     <header class="h-20 text-white  md:flex md:justify-between md:items-center fixed top-0 z-50 w-full glassmorphism">
         <img loading="lazy" width="1523" height="440" src="https://res.cloudinary.com/daaeq1zas/image/upload/v1720160607/Logo_Png-09_sifemw.png"
             alt="Aero2Astro" class="md:mx-10 max-sm:hidden w-[180px] md:w-[250px]">
@@ -225,7 +218,7 @@
                     application.</p>
             </div>
             <div class="img-container min-w-fit">
-                <img src="https://aero2astro.com/home/storyimg1.png" width="150" height="150" style="width: 300px; height: auto;">
+                <img src="https://aero2astro.com/home/storyimg1.png" width="150" height="150" class="story-img">
 
             </div>
            
@@ -235,7 +228,7 @@
         <section class="relative flex-wrap my-10 items-center flex items-center gap-8 ">
 
             <div class="img-container min-w-fit">
-                <img src="https://aero2astro.com/home/storyimg2.png" width="512" height="512" style="width: 300px; height: auto;">
+                <img src="https://aero2astro.com/home/storyimg2.png" width="512" height="512" class="story-img">
 
             </div>
             <div class=" z-10 mt-20 flex-1">
@@ -251,16 +244,6 @@
                     As we are the part of the future we wanted to create a platform for the young minds through the
                     possible ways. Eventually this created the various divisons which emerged are as follows:</p>
             </div>
-            <style>
-                .img-container {
-                    perspective: 1000px;
-                }
-
-                .img-container img {
-                    transform: rotateX(0) rotateY(0);
-                    transition: transform 0.1s;
-                }
-            </style>
         </section>
 
 
@@ -333,7 +316,7 @@
 
 
     <!-- Footer -->
-    <footer style="background-color: #272727;" class="pt-5  pb-3 footer  footer-dark   ">
+    <footer class="pt-5  pb-3 footer footer-dark">
   <!-- About Aero2astro -->
   <section class="my-20 relative bottom-20 lg:px-24 max-md:px-10 max-sm:px-5">
 
@@ -391,8 +374,7 @@
 
 
 
-        <div class="container absolute bottom-0 w-full footer-section bottom-3 md:bottom-10 "
-        style="max-width: 1100px !important;">
+        <div class="container absolute bottom-0 w-full footer-section bottom-3 md:bottom-10">
         <div class="row  max-sm:mb-4">
             <div class="col-12 col-md-4 ">
                 <div class="pr-lg-5 mb-4">
