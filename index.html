@@ -59,13 +59,6 @@
 
 <body class="bg-[#272727]">
 
-    <style>
-        .glassmorphism {
-            backdrop-filter: blur(10px);
-            background: rgba(0, 0, 0, 0);
-        }
-    </style>
-
     <header class="h-20 text-white  md:flex md:justify-between md:items-center fixed z-50 w-full glassmorphism">
         <img loading="lazy" width="1523" height="440" src="https://res.cloudinary.com/daaeq1zas/image/upload/v1720160607/Logo_Png-09_sifemw.png"
             alt="Aero2Astro" class="md:mx-10 max-sm:hidden w-[180px] md:w-[250px]">
@@ -236,8 +229,7 @@
             </ol>
             <div class="carousel-inner" role="listbox">
                 <div class="carousel-item active">
-                    <section class="spotlight parallax bg-cover bg-size--cover" data-spotlight="fullscreen"
-                        style="background-image: url('https://res.cloudinary.com/daaeq1zas/image/upload/v1720166841/maxresdefault_dmcxfa.jpg')">
+                    <section class="spotlight parallax bg-cover bg-size--cover slide-1" data-spotlight="fullscreen">
                         <span class="mask  darkcolor alpha-5"></span>
                         <div class=" py-lg pt-lg-xl">
                             <div class="container d-flex align-items-center no-padding">
@@ -273,8 +265,7 @@
                 </div>
                 <!-- /.carousel-item -->
                 <div class="carousel-item">
-                    <section class="spotlight parallax bg-cover bg-size--cover" data-spotlight="fullscreen"
-                        style="background-image: url('https://res.cloudinary.com/daaeq1zas/image/upload/v1720162038/unknown_kzylfa.png')">
+                    <section class="spotlight parallax bg-cover bg-size--cover slide-2" data-spotlight="fullscreen">
                         <span class="absolute inset-0 bg-black opacity-50"></span>
                         <div class=" py-lg pt-lg-xl">
                             <div class="container d-flex align-items-center no-padding">
@@ -283,7 +274,6 @@
                                         class="row cols-xs-space align-items-center text-center text-md-left justify-content-center">
                                         <div class="col-md-7 col-sm-12">
                                             <div class="text-center mt-5">
-                                                <!-- <img loading="lazy" src="themes/boomerangui/assets/images/brand/icon.png" style="width: 200px;" class="img loading="lazy"-fluid animated" data-animation-in="jackInTheBox" data-animation-delay="1000"> -->
                                                 <h2 class="heading display-4 font-weight-400 text-white mt-5 animate ">
                                                     <span class="font-weight-700" data-animation-in="fadeInUp"
                                                         data-animation-delay="2500">
@@ -311,8 +301,7 @@
                 </div>
 
                 <div class="carousel-item">
-                    <section class="spotlight parallax bg-cover bg-size--cover" data-spotlight="fullscreen"
-                        style="background-image: url('https://res.cloudinary.com/daaeq1zas/image/upload/v1720167016/a2a2_eb1eq2.png')">
+                    <section class="spotlight parallax bg-cover bg-size--cover slide-3" data-spotlight="fullscreen">
                         <span class="absolute inset-0 bg-black opacity-50"></span>
                         <div class=" py-lg pt-lg-xl">
                             <div class="container d-flex align-items-center no-padding">
@@ -321,7 +310,6 @@
                                         class="row cols-xs-space align-items-center text-center text-md-left justify-content-center">
                                         <div class="col-md-7 col-sm-12">
                                             <div class="text-center mt-5">
-                                                <!-- <img loading="lazy" src="themes/boomerangui/assets/images/brand/icon.png" style="width: 200px;" class="img loading="lazy"-fluid animated" data-animation-in="jackInTheBox" data-animation-delay="1000"> -->
                                                 <h2 class="heading display-4 font-weight-400 text-white mt-5 animate ">
                                                     <span class="font-weight-700 " data-animation-in="fadeInUp"
                                                         data-animation-delay="2500">
@@ -460,17 +448,6 @@
             </div>
         </section>
 
-        <style>
-            .img-container {
-                perspective: 1000px;
-            }
-
-            .img-container img {
-                transform: rotateX(0) rotateY(0);
-                transition: transform 0.1s;
-            }
-        </style>
-
         <script>
             const imgContainer = document.querySelector('.img-container');
             const img = imgContainer.querySelector('img');
@@ -596,8 +573,7 @@
         <!-- 3years -->
         <section class=" text-white relative md:my-20 px-4 lg:px-20">
             <section class="flex flex-col md:flex-row md:items-end justify-center text-white">
-                <div style="background-image: url(&quot;//cms-assets.tutsplus.com/uploads/users/412/posts/28645/image/photodune-13107671-3d-drone-flying-in-the-sky-xxl2.jpg&quot;); background-position: 0px -50.2856px;"
-                    class="text-[200px] font-oswald md:text-[400px] font-semibold leading-none bg-image text-transparent bg-clip-text">
+                <div class="text-[200px] font-oswald md:text-[400px] font-semibold leading-none bg-image text-transparent bg-clip-text three-bg">
                     3
                 </div>
                 <div class=" mb-3 md:text-left">
@@ -605,12 +581,6 @@
                     <p class="text-lg md:text-2xl">IN THE FIELD</p>
                 </div>
             </section>
-
-            <style>
-                .font-oswald {
-                    font-family: 'Oswald', sans-serif;
-                }
-            </style>
 
 
         </section>
@@ -910,7 +880,7 @@
 
 
     <!-- Footer -->
-    <footer style="background-color: #272727;" class="pt-5 pb-3 footer  footer-dark   ">
+    <footer class="pt-5 pb-3 footer footer-dark">
 
 
         <div class="planetfooter">
@@ -955,8 +925,7 @@
 
 
 
-        <div class="container absolute bottom-0 w-full footer-section bottom-3 md:bottom-10 "
-            style="max-width: 1100px !important;">
+        <div class="container absolute bottom-0 w-full footer-section bottom-3 md:bottom-10">
             <div class="row  max-sm:mb-4">
                 <div class="col-12 col-md-4 ">
                     <div class="pr-lg-5 mb-4">
